@@ -4,6 +4,7 @@
 - Backend 없고, 로컬로만 되어있음
 - 아래 방식대로 회원가입하고 로그인 하면 거래내역에서 보낸 사람 계좌와 출금내역이 뜨도록 했으나 최근 확인해보니 안됨.
 - 거래 내역 페이지
+  
   <img width="605" alt="image" src="https://github.com/yhyeon12/Capston2_DonDDotgyMe/assets/74660900/50d96f1d-01b1-49cf-b4db-1961d80959fa">
 
 1. 회원가입하기
