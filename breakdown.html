@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Inner Page - Arsha Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- calendar CSS File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+  <!-- 아래 cdn 필요없을 것 같은데 일단 주석처리 -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>   -->
+
+  <!--외부 자바스크립트 파일 불러오기-->
+  <script type="text/javascript" src="C:\2022-1C\capston3\capston_1725\node_modules\web3\dist\web3.min.js"></script>
+  <script type="text/javascript" src="Timestamp.js"></script>
+  <script src="Timestamp.js"></script>
+  <script type="text/javascript" src="else_info.js"></script>
+  <script src="else_info.js"></script>
+
+  <!-- 외부 자바스크립트 파일 불러오기 test -->
+  <!-- <script type="text/javascript" src="C:\2022-1C\capston3\arsha_2\assets\js\test.js"></script> -->
+  <!-- <script src="C:\2022-1C\capston3\arsha_2\assets\js\test.js"></script> -->
+  <!-- <script type="module" src="test.js"></script> -->
+  <script type="text/javascript" src="test.js"></script>
+  <script type="text/javascript" src="breakdown_aid.js"></script>
+  <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="main_lg.html">돈땃쥐미</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="main_lg.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="main_lg.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="main_lg.html#services">service</a></li>
+          <li><a class="nav-link scrollto" href="breakdown.html">거래내역</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="main_lg.html">Home</a></li>
+          <li>거래내역 확인</li>
+        </ol>
+        <h2>거래내역 확인</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+
+      <!-- ======= 거래내역 확인 Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>컴퓨터공학부의 거래 내역</h2>
+          <!-- 달력, 조회 등 화면 좁아지면 dropdown으로 -->
+          <h3>현재 잔액</h3>
+          <h3 id="ether"> : 현재 잔액 </h3>
+          <!-- 달력/거래내역 조회 기간 선택 -->
+          <div class="cal-container px-1 px-sm-5 mx-auto">
+            <form autocomplete="off">
+                <div class="flex-row d-flex justify-content-center">
+                  <div>
+                    <div class="input-group input-daterange"> 
+                      <input type="text" class="col-lg-6 cal form-control cal-position" placeholder="Start Date" readonly> 
+                      <input type="text" class="col-lg-6 cal form-control cal-position" placeholder="End Date" readonly>
+                      <!-- 버튼은 onclick말고 js의 이벤트리스너 사용하기 -->
+                      <!-- 특정 기간을 전송하는 것이므로 버튼 type은 submit인 것 같음 -->
+                      <button type="submit" class="col-lg-2 btn btn-outline-secondary" onclick="">조회</button>
+                    </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+          <!-- 달력.js -->
+          <script>
+            // jquery
+            $(document).ready(function(){
+              $('.input-daterange').datepicker({
+              format: 'yyyy-mm-dd',
+              autoclose: true
+              });
+            });
+          </script>
+          <!-- --------달력 END --------- -->
+          <!-- <p>현재 잔액</p>
+          <p id="ether"> : 현재 잔액 </p> -->
+        </div>
+
+        <!-- ================== 트랜잭션 박스 html->js ======================= -->
+        <script>
+          document.write('<div class="row">');
+          for(var i=0; i<5; i++){
+            document.write('<div data-aos="fade-up" data-aos-delay="'+i+'00">');
+            document.write('<div class="box featured">');
+            document.write('<div class="row">');
+            document.write('<div class="col breakdown-left">');
+            document.write('<p id="dateTime'+i+'">날짜 및 시간</p>');
+            document.write('<p id="man'+i+'"> 보낸 사람 : </p>');
+            document.write('</div>');
+            document.write('<div class="col breakdown-right">');
+            document.write('<p id="trans'+i+'"> : 입금 내역 </p>');
+            // document.write('<p id="ether'+i+'"> : 현재 잔액 </p>');
+            document.write('</div>');
+            document.write('</div>');
+            document.write('</div>');
+            document.write('</div>');
+          }
+          for(var i=5; i<20; i++){
+            document.write('<div class="check-histr" data-aos-delay="'+i+'00">');
+            document.write('<div class="box featured">');
+            document.write('<div class="row">');
+            document.write('<div class="col breakdown-left">');
+            document.write('<p id="dateTime'+i+'">날짜 및 시간</p>');
+            document.write('<p id="man'+i+'"> 보낸 사람 : </p>');
+            document.write('</div>');
+            document.write('<div class="col breakdown-right">');
+            document.write('<p id="trans'+i+'"> : 입금 내역 </p>');
+            // document.write('<p id="ether'+i+'"> : 현재 잔액 </p>');
+            document.write('</div>');
+            document.write('</div>');
+            document.write('</div>');
+            document.write('</div>');
+          }
+        document.write('</div>');
+        </script>
+
+        <!-- ================== html->js END ======================= -->
+
+        
+          <!-- 더보기 버튼 생성 -->
+          <button type="button" class="break-more break-more-position btn btn-lg btn-outline-secondary col-lg-2">
+            더보기 <ion-icon name="chevron-down-outline"></ion-icon>
+          </button>
+          <!-- <button type="button" id="js-btn" class="break-morea break-more-position btn btn-lg btn-outline-secondary col-lg-2">
+            더보기 <ion-icon name="chevron-down-outline"></ion-icon>
+          </button> -->
+        </div>
+      </div>
+
+      
+
+      <!-- 더보기 클릭시 동작 jquery -->
+      <script>
+        // jquery
+        // 더보기 클릭 >> 클래스가 check-histr인 html이 뜸
+        $(function(){
+          $('.break-more').click(function(){
+            $('.check-histr').fadeIn(500);
+          })
+        });
+        // $(function(){
+        //   $('.break-more').click(function(){
+        //     $('#js-jam'+20).fadeIn(600);
+        //   })
+        // });
+        
+        // $(function(){
+        //   $('.break-more').click(function(){
+        //     load('#js-load','5');
+        //   })
+        // });
+        // function load(id, cnt) {
+        //   var t_length = 15;
+        //   var total_cnt;
+        //   if (cnt < t_length) {
+        //       total_cnt = cnt;
+        //   } else {
+        //       total_cnt = t_length;
+        //       $('.js-btn').hide()
+        //   }
+        //   $('#js-load'+total_cnt).fadeIn(500);
+        // }
+
+      </script>
+    <!-- 날짜 및 시간 가져오기 js -->
+      <script type="text/javascript">   
+        // 거래내역 페이지가 다 로드되면 다음 함수 실행 
+        // 날짜 및 시간
+        // 트랜잭션 개수를 넘겨받을 수 있으면 넘겨 받아서 그만큼 함수 돌리기
+        // 함수 내에서 개수만큼 돌리거나, 함수 밖에서 개수만큼 호출을 하던가
+
+        window.onload = function(){
+          // etc_info
+          async function etc_info(i){
+            // 배열 준비
+            // ==================test ==================
+            var infoValue = new Array;
+            // infoValue = createArray(10, 5);
+            infoValue =await getInfo(i);
+            console.log("트랜잭션의 길이 : "+infoValue.length); // 트랜잭션의 길이
+
+            document.getElementById("ether").innerHTML = infoValue[3]; 
+            async function ouput_withdraw(i){   // 출금 함수
+              // flag(i,"withdraw");
+              // 출금금액, 받는 사람, 잔액
+              var price = infoValue[1];
+              var to = infoValue[2];
+              var ether = infoValue[3];
+              var time = infoValue[4];
+              console.log("출금 : "+price+","+to+","+ether+","+time+","+i);
+
+              document.getElementById("trans"+i).innerHTML=price+" : 출금 내역";     // 출금 금액
+              document.getElementById("man"+i).innerHTML="받는 사람 : "+to;        // 받는 사람
+              // document.getElementById("ether"+i).prepend(ether);        // 잔액, 이더값
+              document.getElementById("dateTime"+i).innerHTML = time; 
+            }
+            async function ouput_deposit(i){    // 입금 함수
+              // flag(i,"deposit");
+              // 입금금액, 주는 사람, 잔액
+              var value = infoValue[1];
+              var from = infoValue[2];
+              var ether = infoValue[3];
+              var time = infoValue[4];
+              console.log("입금 : "+value+","+from+","+ether+","+time+","+i);
+
+              document.getElementById("trans"+i).innerHTML=value+" : 입금 내역";       // 입금 금액
+              document.getElementById("man"+i).innerHTML="보낸 사람 : "+from;          // 주는 사람
+              // document.getElementById("ether"+i).prepend(ether);        // 잔액, 이더값
+              document.getElementById("dateTime"+i).innerHTML = time;
+            }
+            // 트랜잭션의 개수만큼 출력
+            if(infoValue[0] == "withdraw"){     // 출금
+              ouput_withdraw(infoValue[5]);
+            } else if(infoValue[0] == "deposit"){   // 입금
+              ouput_deposit(infoValue[5]);
+            }
+            // for(var i=0; i<infoValue.length; i++){
+            //   if(infoValue[0] == "withdraw"){     // 출금
+            //      ouput_withdraw(i);
+            //   } else if(infoValue[0] == "deposit"){   // 입금
+            //     ouput_deposit(i);
+            //   }
+            // }
+            // =================test END ===============
+          }
+          // 함수 호출
+          for(var i=0; i<20; i++){
+            etc_info(i);
+          }
+        }
+
+        
+      </script>
+    </section><!-- End 거래내역 확인 Section -->
+  </section><!-- End innerpage Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- ionicons, 아이콘 사용 위한 cdn -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- <script type="module" src="test.js"></script> -->
+<script type="text/javascript" src="test.js"></script>
+</body>
+
+</html>
